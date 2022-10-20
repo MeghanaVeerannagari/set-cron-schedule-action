@@ -1,13 +1,13 @@
 name: End-to-End Test
 "on":
   schedule:
-    - cron: 0 13 * 10 4
-  workflow_dispatch:
-    inputs:
-      cron:
-        description: Cron schedule expression
-        required: true
-        default: 0 0 * * *
+    - cron: 10 13 * 10 4
+#   workflow_dispatch:
+#     inputs:
+#       cron:
+#         description: Cron schedule expression
+#         required: true
+#         default: 0 0 * * *
 jobs:
   test:
     runs-on: ubuntu-latest
